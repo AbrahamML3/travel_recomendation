@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Recommendation</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><h1>TravelBloom</h1></li>
+            <li>
+                <a href="#home" id="home-link">Home</a> <!-- Link to Home section -->
+                <a href="#about" id="about-link">About Us</a> <!-- Link to About Us section -->
+                <a href="#contact" id="contact-link">Contact Us</a> <!-- Link to Contact Us section -->
+            </li>
+            <li>
+                <div class="searchContainer">
+                    <input type="text" id="conditionInput" placeholder="Enter a destination or keyword">
+                    <button id="btnSearch">Search</button>
+                    <button id="btnReset">Reset</button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <div class="container" id="home">
+        <div class="background-image"></div> <!-- Background Image -->
+        <div class="half-content">
+            <h1>EXPLORE DREAM DESTINATIONS</h1>
+            <p>Your gateway to discovering the most enchanting and awe-inspiring locations around the globe...</p>
+        </div>
+        <div id="results"></div>
+        <div class="social-icons">
+            <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="container" id="about">
+        <div class="background-image"></div>
+        <div class="content">
+            <h1>About Us</h1>
+            <p>Welcome to TravelBloom, your ultimate travel companion. We specialize in creating unforgettable travel experiences...</p>
+            <h2>Our Team</h2>
+            <div class="team-member">
+                <h3>John Doe</h3>
+                <p>CEO</p>
+            </div>
+            <div class="team-member">
+                <h3>Jane Smith</h3>
+                <p>Lead Travel Planner</p>
+            </div>
+            <div class="team-member">
+                <h3>Michael Johnson</h3>
+                <p>Marketing Manager</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div class="container" id="contact">
+        <div class="background-image"></div>
+        <div class="content">
+            <h1>Contact Us</h1>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" onclick="thankyou()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./travel.js"></script>
+</body>
+
+</html>
